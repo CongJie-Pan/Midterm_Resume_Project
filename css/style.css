@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 微軟正黑體;
+    background-color: #DAD7CD;
+}
+
+nav{ /* 最上方欄位 */
+
+    position: fixed; /* 將工具列固定在視口頂部 */
+    top: 0; /* 距離視口頂部的距離 */
+    left: 0; /* 距離視口左側的距離 */
+    width: 100%; /* 工具列寬度擴展至視口的整個寬度 */
+    background-color: #f7f7f7;
+    transition: top 0.3s; /* 添加過渡效果 */
+    color: #393939;
+    padding: 6px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* 添加微弱的黑色陰影 */
+    z-index: 1000; /* 設置工具列的 z-index 值，使工具列可以保持在最上圖層 */
+    
+}
+
+nav a{ /*  上方欄位內各欄位樣式設定 */
+    padding: 30px 20px; /* 留白 */
+    display: inline-block;
+    text-decoration: none; /* 消除下畫線 */
+    color: inherit;
+    font-size: 18px;;
+    font-family: "思源宋體", serif;
+    font-weight: bold;
+
+}
+
+nav a:hover{ /* 偵測滑鼠有無滑到此處 */
+    background-color: #b7beb4;
+    color: #353535;
+    color: inherit;
+    text-decoration: none;
+}
+
+.separator{ /* 分隔線 */
+
+    border-top: 1px solid #7b7b7b; /* 黑色分隔線，1px 寬度 */
+    width: 50%;
+    margin: 30px auto; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* 添加陰影效果 */
+
+}
+
+.separator_BasicInformation{ /* 分隔線 */
+
+    border-top: 1px solid #7b7b7b; /* 黑色分隔線，1px 寬度 */
+    width: 50%;
+    margin: 10px auto; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* 添加陰影效果 */
+
+}
+
+/*---Basic Information 個人基本資訊區 ---*/
+
+.BasicInfo {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: left; /* 水平居中 */
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    background-color: #c6d8c0;
+}
+
+.BasicInfo h2{
+    
+    font-family: 思源宋體;
+    margin: 0; /* 去除標題的預設邊距 */
+    text-align: left;
+    
+}
+
+.PhotoSticker {
+    
+    margin-left: 70px; /* 右側留白 */
+    margin-right: 70px; /* 左側留白 */
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+    
+    position:relative;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.PhotoSticker img{
+    position: relative;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HeadContent {
+    text-align: left;
+    font-family: 思源宋體;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+}
+
+/*--- My Ability 技能能力區 ---*/
+
+.MyAbility {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直置中 */
+    padding: 15px;
+    background-color: #fffffff0;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: 思源宋體;
+}
+
+.MyAbility h2{
+    
+    font-family: 思源宋體;
+    margin: 0; /* 去除標題的預設邊距 */
+    text-align: left;
+    
+}
+
+.Programming_Title {
+    color:#353535;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Programming_Ability p {
+    color:#353535;
+    margin-top: 10px;
+}
+
+.VideoEdditing_Title {
+    color:#353535;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.VideoEditting ul{
+    position: relative;
+}
+
+.VideoEditting ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.EnglishAbility_Title {
+    color:#353535;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.EnglishAbility ul{
+    position: relative;
+}
+
+.EnglishAbility ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/*--- OutOfSchoolExperience 校外經歷區--- */
+
+.OutOfSchoolExperience {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直置中 */
+    padding: 15px;
+    background-color: #c4d7ba;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: 思源宋體;
+}
+
+.OutOfSchoolExperience h2{
+    
+    font-family: 思源宋體;
+    margin: 0; /* 去除標題的預設邊距 */
+    text-align: left;
+    
+}
+
+.NTUSeedChiTeacher_Title {
+    color:#353535;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.NTUSeedChiTeacher p {
+    color:#353535;
+    margin-top: 10px;
+    text-align: center;
+    font-size:18px;
+}
+
+.NTUSeedChiTeacher_Certificate {
+
+    
+    margin:0 auto; /* 置中對齊 */
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+    
+    position:relative;
+    width: 340px;
+    height:250px;
+    border-radius: 10%;
+    overflow: hidden;
+    
+}
+
+.NTUSeedChiTeacher_Certificate img{
+    position: relative;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.WritingClass_Title {
+    color:#353535;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.WritingClass p {
+    color:#353535;
+    margin-top: 10px;
+    text-align: center;
+    font-size:18px;
+}
+
+.WritingClass_ImgContainer{
+
+    display: flex;
+    justify-content: center; /* 將 flex 內容水平置中 */
+    align-items: center; /* 將 flex 內容垂直置中 */
+
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+
+.WritingClass_Certificate{ /*寫作課證書圖片容器設定 */
+    position:relative;
+    width: 340px;
+    height:250px;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-right: 20px; /* 右側留白 */
+}
+
+.WritingClass_ArticleCover{ /*寫作課刊登文章之圖片容器設定 */
+    position:relative;
+    width: 300px; /*340*315*/
+    height:275px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+
+.SanCodeCompetion_Title {
+    color:#353535;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.SanCodeCompetion p {
+    color:#353535;
+    margin-top: 10px;
+    text-align: center;
+    font-size:18px;
+}
+
+.SanCodeCompetion_Certificate {
+
+    margin:0 auto; /* 置中對齊 */
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+    position:relative;
+    width: 300px;
+    height:410px; /* 110 個像素長寬位差 */
+    border-radius: 10%;
+    overflow: hidden;
+    
+}
+
+.WritingClass_Certificate img, /* 圖片內部設定 */
+.WritingClass_ArticleCover img,
+.SanCodeCompetion_Certificate img{
+    position: relative;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*--- WorkExperience 工作經驗區 ---*/
+
+.WorkExperience {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直置中 */
+    padding: 15px;
+    background-color: #edefec;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: 思源宋體;
+}
+
+.WorkExperience h2{
+    
+    font-family: 思源宋體;
+    margin: 0; /* 去除標題的預設邊距 */
+    text-align: left;
+    
+}
+
+.WorkExperience ul{
+    position: relative;
+}
+
+.WorkExperience ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* --- 基本頁尾設定 --- */
+.clearFix{
+    clear:both;
+}
+
+footer{
+    background-color: #588157;
+    color:#DAD7CD;
+    text-align: center;
+    padding: 6px;
+}
+
+
+
