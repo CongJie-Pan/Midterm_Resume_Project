@@ -63,6 +63,7 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 /*---Basic Information 個人基本資訊區 ---*/
 
 .BasicInfo {
+
     display: flex; /* 使用 Flexbox 布局 */
     align-items: center; /* 垂直居中 */
     justify-content: left; /* 水平居中 */
@@ -70,40 +71,55 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     padding-right: 300px;
     padding-top: 130px;
     padding-bottom: 15px;
-    background-color: #c6d8c0;
+    /*background-color: #c6d8c0;*/ /*作為看圖的排版用*/
+
+
+    
+    
 }
 
 .BasicInfo h2{
     
+    
+
     font-family: 思源宋體;
     margin: 0; /* 去除標題的預設邊距 */
     text-align: left;
+    /*
+    margin-right: 300px;
+    margin-left: 45px;*/
+    /*background-color: #ca1b1b;*/ /*作為看圖的排版用*/
+    
     
 }
 
-.PhotoSticker {
-    
-    margin-left: 70px; /* 右側留白 */
-    margin-right: 70px; /* 左側留白 */
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    
-    
-    position:relative;
-    width: 200px;
-    height:200px;
-    border-radius: 50%;
-    overflow: hidden;
-    
+.PhotoContainer {
+    position: relative;
+    width: 230px; /* 容器寬度 */
+    height: 190px; /* 容器高度 */
+    overflow: hidden; /* 超出部分隱藏 */
+    /*background-color: #353535;*/ /*作為看圖的排版用*/
+
+    margin-left: 40px; /* 左留白 */
+    margin-right: 20px; /* 右側留白 */
 }
+
+
+.PhotoSticker {
+    /**/
+}
+
 
 .PhotoSticker img{
     position: relative;
     top:0;
     left: 0;
-    width:100%;
-    height: 100%;
+    width: 190px; /* 讓圖片寬度填滿容器 */
+    height: 180px; /* 讓圖片高度自動根據寬度和原始比例調整 */
+    display: block; /* 避免行內元素間隙 */
     object-fit: cover;
+    border-radius: 50%;
+    
 }
 
 .HeadContent {
@@ -111,6 +127,8 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     font-family: 思源宋體;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    
+    /*background-color: orange;*/ /*作為看圖的排版用*/
     
 }
 

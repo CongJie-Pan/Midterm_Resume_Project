@@ -56,3 +56,5 @@ https://www.youtube.com/watch?v=eoSfzVz9ur0&ab_channel=OnlineTutorials&loop=0
 3. 放上進度環、進度條到原檔案。
 4. 網站的文字部分好像有點多，有點單調。可以加上一點其他配色。(配色在檔案區)
 5. 基本資訊連結的地方。
+6. 完成頭貼圖片視窗縮小會被吃掉的錯誤。(已經用好container，但還是會被左邊的HeaderContent吃掉。)
+
