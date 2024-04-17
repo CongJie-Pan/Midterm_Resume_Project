@@ -128,15 +128,18 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 
 .BasicInfo_PhotoContainer {
     position: relative;
-    min-width: 190px; /* 最小寬度與高度，確保不會因為介面變小，而壓縮到container使圖片被裁切 */
+
+    /* 最小寬度與高度，確保不會因為介面變小，而壓縮到container使圖片被裁切 */
+
+    min-width: 190px; 
     min-height: 190px; 
+
     overflow: hidden; /* 超出部分隱藏 */
     border-radius: 50%; /* 裁切為圓形效果 */
     margin-left: 30px; /*圖片之左間距增大*/
     margin-right: 30px; /*圖片之右間距增大*/
     object-fit: cover;
 
-    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* 添加陰影效果 - 暫時先不添加 */
 }
 
 .BasicInfo_PhotoContainer img {
@@ -148,6 +151,7 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     display: block; /* 避免行內元素間隙 */
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3); /* 添加陰影效果 - 暫時先不添加 */
 }
 
 .BasicInfo_Content { /**/
@@ -157,14 +161,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     line-height: 2.5; /* 增加行距 */
     height:auto;
     /*height: 190px;*/
-    
     /*background-color: orange; /*作為看圖的排版用*/
     
 }
-
-
-
-
 
 
 /*-----------------------*/
@@ -202,8 +201,6 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 
     /*background-color: brown; /*背景色調整：作為看圖的排版用*/
 
-    
-    
 }
 
 .Programming_Title {
@@ -308,30 +305,42 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     font-size:18px;
 }
 
-.NTUSeedChiTeacher_Certificate {
+/*---*/
 
+.NTUSeedChiTeacher_Certificate_Container {
     
-    margin:0 auto; /* 置中對齊 */
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    
-    
-    position:relative;
-    width: 340px;
-    height:250px;
-    border-radius: 10%;
+    position: relative;
     overflow: hidden;
+
+    /*min,max 用於固定圖片，免於視窗縮小而跑版*/
+
+    min-width:340px;
+    min-height:250px;
+
+    max-width:340px;
+    max-height: 250px;
+
+    border-radius: 10%;
+    margin:0 auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+    
     
 }
 
-.NTUSeedChiTeacher_Certificate img{
+.NTUSeedChiTeacher_Certificate_Container img{
+
+    width: 100%; /* 讓圖片寬度填滿容器 */
+    height: 100%; /* 讓圖片高度自動根據寬度和原始比例調整 */
     position: relative;
     top:0;
     left: 0;
-    width:100%;
-    height: 100%;
+    display: block;
     object-fit: cover;
+
 }
+
+/*---*/
 
 .WritingClass_Title {
     color:#353535;
@@ -359,21 +368,47 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 }
 
 .WritingClass_Certificate{ /*寫作課證書圖片容器設定 */
+
     position:relative;
-    width: 340px;
-    height:250px;
+
+    /*min,max 用於固定圖片，免於視窗縮小而跑版*/
+
+    min-width: 340px;
+    min-height:250px;
+
+    max-width: 340px;
+    max-height:250px;
+
     border-radius: 5%;
     overflow: hidden;
     margin-right: 20px; /* 右側留白 */
 }
 
 .WritingClass_ArticleCover{ /*寫作課刊登文章之圖片容器設定 */
+
     position:relative;
-    width: 300px; /*340*315*/
-    height:275px;
+
+    /*min,max 用於固定圖片，免於視窗縮小而跑版*/
+    min-width: 300px; 
+    min-height:275px;
+
+    max-width: 300px ;
+    max-height: 275px ;
     border-radius: 5%;
     overflow: hidden;
 }
+
+.WritingClass_Certificate img, /* 圖片內部設定 */
+.WritingClass_ArticleCover img{
+    position: relative;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---*/
 
 
 .SanCodeCompetion_Title {
@@ -397,15 +432,19 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     margin-bottom: 10px;
     
     position:relative;
-    width: 300px;
-    height:410px; /* 110 個像素長寬位差 */
+
+    /*min,max 用於固定圖片，免於視窗縮小而跑版*/
+    min-width: 300px;
+    min-height:410px; /* 110 個像素長寬位差 */
+
+    max-width: 300px;
+    max-height:410px;
+
     border-radius: 10%;
     overflow: hidden;
     
 }
 
-.WritingClass_Certificate img, /* 圖片內部設定 */
-.WritingClass_ArticleCover img,
 .SanCodeCompetion_Certificate img{
     position: relative;
     top:0;
@@ -414,6 +453,8 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     height: 100%;
     object-fit: cover;
 }
+
+
 
 /*-----------------------*/
 /*--- WorkExperience 工作經驗區 ---*/
