@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile</title>
+    <style>
+        .ProfileContainer {
+            display: flex;
+            align-items: flex-start; /* 將內容對齊容器的頂部 */
+        }
+
+        .PhotoContainer {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .PhotoContainer img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .HeaderContent {
+            flex: 1; /* 讓右側區塊填滿剩餘空間 */
+            /* 右側區塊的樣式設置 */
+            background-color: rgb(134, 90, 37);
+        }
+
+        @media (max-width: 600px) {
+            /* 在小尺寸設備上，將頭像圖片和右側區塊堆疊 */
+            .ProfileContainer {
+                flex-direction: column;
+            }
+
+            .HeaderContent {
+                width: 100%; /* 讓右側區塊佔滿整個寬度 */
+                background-color: rgb(134, 90, 37);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ProfileContainer">
+        <div class="PhotoContainer">
+            <img src="PhotoSticker.jpeg" alt="MyPhotoSticker">
+        </div>
+        <div class="HeaderContent">
+            <p>...</p>
+        </div>
+    </div>
+</body>
+</html>

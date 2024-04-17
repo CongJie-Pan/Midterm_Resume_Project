@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px; /* 最大寬度 */
+            margin: 0 auto; /* 左右置中 */
+            padding: 0 20px; /* 左右留白 */
+            box-sizing: border-box; /* 包含內外邊距 */
+            background-color: blueviolet;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .content {
+            padding: 20px 0;
+            text-align: justify;
+        }
+
+        .second_content {
+            max-width: 1200px; /* 設置與 container 相同的最大寬度 */
+            margin: 20px auto; /* 上下置中並添加外邊距 */
+            padding: 20px; /* 內容區域留白 */
+            box-sizing: border-box; /* 包含內外邊距 */
+            background-color: #f0f0f0; /* 設置背景顏色 */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper magna ut ante laoreet, ut sodales ligula dignissim. Integer ultricies, velit a dapibus venenatis, eros magna luctus felis, nec scelerisque risus ipsum vel sapien.</p>
+            <p>...</p>
+        </div>
+    </div>
+
+    <div class="second_content">
+        <h2>Second Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper magna ut ante laoreet, ut sodales ligula dignissim. Integer ultricies, velit a dapibus venenatis, eros magna luctus felis, nec scelerisque risus ipsum vel sapien.</p>
+        <p>...</p>
+    </div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+</html>

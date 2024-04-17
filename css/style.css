@@ -1,5 +1,11 @@
+/*-----------------------*/
+/* --- 全局設定 --- */
+/*-----------------------*/
+
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -8,19 +14,29 @@ body{
     background-color: #DAD7CD;
 }
 
+/*-----------------------*/
+/* --- 最上方欄位設定 --- */
+/*-----------------------*/
+
 nav{ /* 最上方欄位 */
 
-    position: fixed; /* 將工具列固定在視口頂部 */
     top: 0; /* 距離視口頂部的距離 */
     left: 0; /* 距離視口左側的距離 */
     width: 100%; /* 工具列寬度擴展至視口的整個寬度 */
     background-color: #f7f7f7;
-    transition: top 0.3s; /* 添加過渡效果 */
     color: #393939;
     padding: 6px;
     text-align: center;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* 添加微弱的黑色陰影 */
-    z-index: 1000; /* 設置工具列的 z-index 值，使工具列可以保持在最上圖層 */
+    
+    /* --- 以下將最上方欄位，視為動態導覽(點擊後可以導覽到該處，所用 --- */
+
+    /*position: fixed; /* 將工具列固定在視口頂部 */
+    /*transition: top 0.3s; /* 添加過渡效果 */
+    /*z-index: 1000; /* 設置工具列的 z-index 值，使工具列可以保持在最上圖層 */
+    /*box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* 添加微弱的黑色陰影 */
+
+    
     
 }
 
@@ -32,6 +48,7 @@ nav a{ /*  上方欄位內各欄位樣式設定 */
     font-size: 18px;;
     font-family: "思源宋體", serif;
     font-weight: bold;
+    
 
 }
 
@@ -42,108 +59,139 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     text-decoration: none;
 }
 
-.separator{ /* 分隔線 */
+/*-----------------------*/
+/* --- 分隔線設定 --- */
+/*-----------------------*/
+
+.separator{ /* 基本分隔線設定 */
 
     border-top: 1px solid #7b7b7b; /* 黑色分隔線，1px 寬度 */
-    width: 50%;
-    margin: 30px auto; 
+    width: 50%; /* 線寬度 */
+    margin: 30px auto;  /* 與其他元素間距增大，中間對齊 */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* 添加陰影效果 */
 
 }
 
-.separator_BasicInformation{ /* 分隔線 */
+.separator_MyAbility{ /* 各項能力處的分隔線設定 */
 
     border-top: 1px solid #7b7b7b; /* 黑色分隔線，1px 寬度 */
-    width: 50%;
-    margin: 10px auto; 
+    width: 50%; /* 線寬度 */
+    margin: 10px auto; /* 與其他元素間距增大，中間對齊 */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* 添加陰影效果 */
 
 }
 
-/*---Basic Information 個人基本資訊區 ---*/
+/*-----------------------*/
+/* --- Basic Information 個人基本資訊區 --- */
+/*-----------------------*/
 
-.BasicInfo {
+/* -------------------------------
+說明：為了使版型更加穩固，不跑版。
+除了最底下一層作為底色之外，上層使用容器裝載內容 
+---------------------------------*/
 
-    display: flex; /* 使用 Flexbox 布局 */
-    align-items: center; /* 垂直居中 */
-    justify-content: left; /* 水平居中 */
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 130px;
-    padding-bottom: 15px;
-    /*background-color: #c6d8c0;*/ /*作為看圖的排版用*/
+.BasicInfo { /*各項能力之最底下面板區域*/
 
-
+    width:100%; /* 寬度填滿 */
+    height: auto; /*依照內容自適應高度*/
+    background-color: #b9cfae; /* 背景色調整*/
+    padding-top: 30px;
+    padding-bottom: 30px;
     
-    
+}
+
+.BasicInfo_Container { /* 基本資訊之內容容器 */ 
+
+    display: flex;  /*排列使用flex*/
+    height:auto; /*依照內容自適應高度*/
+    justify-content:left; /* 水平左靠齊 */
+    align-items: center; /* 垂直置中 */
+    margin: 0 auto; /* 左右邊距，使容器置中 */
+    width: 62%; /* 中間寬度部分，存留62%*/
+
+    /*background-color: aqua; /*背景色調整：作為看圖的排版用*/
+
 }
 
 .BasicInfo h2{
     
-    
-
     font-family: 思源宋體;
     margin: 0; /* 去除標題的預設邊距 */
     text-align: left;
-    /*
-    margin-right: 300px;
-    margin-left: 45px;*/
-    /*background-color: #ca1b1b;*/ /*作為看圖的排版用*/
-    
+    height: 190px; /*高度與其餘元素內容對齊*/
+
+    /*background-color: #ca1b1b; /*背景色調整：作為看圖的排版用*/
     
 }
 
-.PhotoContainer {
+/* 頭貼圖片設定 - 可以先用容器盛載圖片，避免縮小視窗後跑版*/
+
+.BasicInfo_PhotoContainer {
     position: relative;
-    width: 230px; /* 容器寬度 */
-    height: 190px; /* 容器高度 */
+    min-width: 190px; /* 最小寬度與高度，確保不會因為介面變小，而壓縮到container使圖片被裁切 */
+    min-height: 190px; 
     overflow: hidden; /* 超出部分隱藏 */
-    /*background-color: #353535;*/ /*作為看圖的排版用*/
+    border-radius: 50%; /* 裁切為圓形效果 */
+    margin-left: 30px; /*圖片之左間距增大*/
+    margin-right: 30px; /*圖片之右間距增大*/
+    object-fit: cover;
 
-    margin-left: 40px; /* 左留白 */
-    margin-right: 20px; /* 右側留白 */
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* 添加陰影效果 - 暫時先不添加 */
 }
 
-
-.PhotoSticker {
-    /**/
-}
-
-
-.PhotoSticker img{
+.BasicInfo_PhotoContainer img {
     position: relative;
-    top:0;
+    top: 0; /* 圖片座標對齊至原點 */
     left: 0;
-    width: 190px; /* 讓圖片寬度填滿容器 */
+    width: 180px; /* 讓圖片寬度填滿容器 */
     height: 180px; /* 讓圖片高度自動根據寬度和原始比例調整 */
     display: block; /* 避免行內元素間隙 */
     object-fit: cover;
     border-radius: 50%;
-    
 }
 
-.HeadContent {
+.BasicInfo_Content { /**/
     text-align: left;
     font-family: 思源宋體;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: 3px; /* 增加字距 */
+    line-height: 2.5; /* 增加行距 */
+    height:auto;
+    /*height: 190px;*/
     
-    /*background-color: orange;*/ /*作為看圖的排版用*/
+    /*background-color: orange; /*作為看圖的排版用*/
     
 }
 
-/*--- My Ability 技能能力區 ---*/
 
-.MyAbility {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 垂直置中 */
+
+
+
+/*-----------------------*/
+/* --- My Ability 各項能力區 --- */
+/*-----------------------*/
+
+.MyAbility { /* 各項能力之最底下面板區域 */
+
+    width:100%; /* 寬度填滿 */
+    height: auto; /*依照內容自適應高度*/
     padding: 15px;
     background-color: #fffffff0;
-    padding-left: 300px;
-    padding-right: 300px;
+    
+}
+
+.MyAbility_Container{
+
+    display: flex;
+    height:auto;
+    margin: 0 auto; /* 左右邊距，使容器置中 */
+    justify-content:center;
+    width: 62%; /* 中間寬度部分，存留62%*/
+    flex-direction: column;
     font-family: 思源宋體;
+
+    /*background-color: aqua; /*背景色調整：作為看圖的排版用*/
+
 }
 
 .MyAbility h2{
@@ -151,6 +199,10 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     font-family: 思源宋體;
     margin: 0; /* 去除標題的預設邊距 */
     text-align: left;
+
+    /*background-color: brown; /*背景色調整：作為看圖的排版用*/
+
+    
     
 }
 
@@ -159,11 +211,16 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
+    
+    /*background-color: cornsilk;/*背景色調整：作為看圖的排版用*/
+
 }
 
 .Programming_Ability p {
     color:#353535;
     margin-top: 10px;
+
+    /*background-color: chartreuse;/*背景色調整：作為看圖的排版用*/
 }
 
 .VideoEdditing_Title {
@@ -200,23 +257,36 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     list-style: none;
     margin: 10px 0;
     cursor: pointer;
+    text-align: center;
 }
 
-/*--- OutOfSchoolExperience 校外經歷區--- */
 
-.OutOfSchoolExperience {
+/*-----------------------*/
+/* --- OutOfSchoolExperience 校外經歷區 --- */
+/*-----------------------*/
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 垂直置中 */
+.AfterSchool_Experience {
+
+    width:100%; /* 寬度填滿 */
+    height: auto; /*依照內容自適應高度*/
     padding: 15px;
     background-color: #c4d7ba;
-    padding-left: 300px;
-    padding-right: 300px;
-    font-family: 思源宋體;
+
 }
 
-.OutOfSchoolExperience h2{
+.AfterSchool_Experience_Container{
+
+    display: flex;
+    height:auto;
+    margin: 0 auto; /* 左右邊距，使容器置中 */
+    justify-content:center;
+    width: 62%; /* 中間寬度部分，存留62%*/
+    flex-direction: column;
+    font-family: 思源宋體;
+
+}
+
+.AfterSchool_Experience h2{
     
     font-family: 思源宋體;
     margin: 0; /* 去除標題的預設邊距 */
@@ -345,19 +415,29 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     object-fit: cover;
 }
 
-
+/*-----------------------*/
 /*--- WorkExperience 工作經驗區 ---*/
+/*-----------------------*/
 
 .WorkExperience {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 垂直置中 */
+    width:100%; /* 寬度填滿 */
+    height: auto; /*依照內容自適應高度*/
     padding: 15px;
     background-color: #edefec;
-    padding-left: 300px;
-    padding-right: 300px;
+
+}
+
+.WorkExperience_Container {
+
+    display: flex;
+    height:auto;
+    margin: 0 auto; /* 左右邊距，使容器置中 */
+    justify-content:center;
+    width: 62%; /* 中間寬度部分，存留62%*/
+    flex-direction: column;
     font-family: 思源宋體;
+
 }
 
 .WorkExperience h2{
@@ -380,7 +460,10 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     text-align: center;
 }
 
-/* --- 基本頁尾設定 --- */
+/*-----------------------*/
+/* --- 基本頁尾設定  --- */
+/*-----------------------*/
+
 .clearFix{
     clear:both;
 }
