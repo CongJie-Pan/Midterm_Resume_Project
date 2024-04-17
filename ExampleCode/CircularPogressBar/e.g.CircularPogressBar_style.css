@@ -14,52 +14,64 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #7d2ae8;
+    background: #ffffff;
+}
+
+.CircularPogressBar_AllContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #7d2ae8;
+
 }
 
 .container {
     display: flex;
-    width: 420px;
-    padding: 50px 0;
+    width: 300px;
+    padding: 20px 0;
     border-radius: 8px;
     background: #fff;
-    row-gap: 30px;
+    row-gap: 15px;
     flex-direction: column;
     align-items: center;
     margin: 0 10px; /* 調整間距 */
+    background-color: aqua;
 }
 
-.circular-progress {
+.circular-progress { /*進度條本身*/
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    /*background: conic-gradient(#d9b444 3.6deg, #ededed 0deg);*/
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(255, 145, 0);
     
 }
 
-.circular-progress::before {
+.circular-progress::before { /*進度條裡面的圓形形狀*/
     content: "";
     position: absolute;
-    height: 210px;
-    width: 210px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #2775da;
     
 }
 
 .progress-value {
     position: relative;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600;
     color: #7d2ae8;
 }
 
 .text {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     color: #606060;
 }

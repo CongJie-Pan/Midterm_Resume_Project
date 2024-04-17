@@ -45,11 +45,11 @@ nav a{ /*  上方欄位內各欄位樣式設定 */
     display: inline-block;
     text-decoration: none; /* 消除下畫線 */
     color: inherit;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 18px;;
-    font-family: "思源宋體", serif;
-    font-weight: bold;
     
-
 }
 
 nav a:hover{ /* 偵測滑鼠有無滑到此處 */
@@ -115,7 +115,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 
 .BasicInfo h2{
     
-    font-family: 思源宋體;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
     margin: 0; /* 去除標題的預設邊距 */
     text-align: left;
     height: 190px; /*高度與其餘元素內容對齊*/
@@ -156,7 +158,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 
 .BasicInfo_Content { /**/
     text-align: left;
-    font-family: 思源宋體;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 3px; /* 增加字距 */
     line-height: 2.5; /* 增加行距 */
     height:auto;
@@ -187,7 +191,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     justify-content:center;
     width: 62%; /* 中間寬度部分，存留62%*/
     flex-direction: column;
-    font-family: 思源宋體;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 400;
+    font-style: normal;
 
     /*background-color: aqua; /*背景色調整：作為看圖的排版用*/
 
@@ -195,7 +201,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 
 .MyAbility h2{
     
-    font-family: 思源宋體;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
     margin: 0; /* 去除標題的預設邊距 */
     text-align: left;
 
@@ -208,16 +216,12 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
     
     /*background-color: cornsilk;/*背景色調整：作為看圖的排版用*/
 
-}
-
-.Programming_Ability p {
-    color:#353535;
-    margin-top: 10px;
-
-    /*background-color: chartreuse;/*背景色調整：作為看圖的排版用*/
 }
 
 .VideoEdditing_Title {
@@ -225,6 +229,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .VideoEditting ul{
@@ -243,6 +250,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .EnglishAbility ul{
@@ -255,6 +265,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     margin: 10px 0;
     cursor: pointer;
     text-align: center;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -285,7 +298,9 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 
 .AfterSchool_Experience h2{
     
-    font-family: 思源宋體;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
     margin: 0; /* 去除標題的預設邊距 */
     text-align: left;
     
@@ -296,13 +311,19 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .NTUSeedChiTeacher p {
     color:#353535;
     margin-top: 10px;
     text-align: center;
-    font-size:18px;
+    font-size:20px;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*---*/
@@ -347,13 +368,19 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .WritingClass p {
     color:#353535;
     margin-top: 10px;
     text-align: center;
-    font-size:18px;
+    font-size:20px;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .WritingClass_ImgContainer{
@@ -416,13 +443,19 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .SanCodeCompetion p {
     color:#353535;
     margin-top: 10px;
     text-align: center;
-    font-size:18px;
+    font-size:20px;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .SanCodeCompetion_Certificate {
@@ -477,13 +510,17 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
     justify-content:center;
     width: 62%; /* 中間寬度部分，存留62%*/
     flex-direction: column;
-    font-family: 思源宋體;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
 
 }
 
 .WorkExperience h2{
     
-    font-family: 思源宋體;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
     margin: 0; /* 去除標題的預設邊距 */
     text-align: left;
     
@@ -514,6 +551,9 @@ footer{
     color:#DAD7CD;
     text-align: center;
     padding: 6px;
+    font-family: "source-han-serif-tc", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 

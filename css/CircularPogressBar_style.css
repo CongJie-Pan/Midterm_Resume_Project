@@ -11,53 +11,56 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    background: #7d2ae8;
+    height: 300px;
+    /*background-color: #7d2ae8;*/
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
     display: flex;
-    width: 250px; /*250*/
-    padding: 50px 0; 
+    width: 300px;
+    padding: 10px 0;
     border-radius: 8px;
-    background: #fff;
-    row-gap: 30px;
+    
+    row-gap: 15px;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px; /* 調整間距 */
+    margin: 0 5px; /* 調整間距 */
+    background-color: #d8e4d3;
 }
 
-.circular-progress {
+.circular-progress { /*進度條本身*/
     position: relative;
-    height: 150px; /*150*/
-    width: 200px; /*200*/
+    height: 155px;
+    width: 155px;
     border-radius: 50%;
-    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    background: conic-gradient(#7E96A5 3.6deg, #ededed 0deg);
     display: flex;
     align-items: center;
     justify-content: center;
     
+    
 }
 
-.circular-progress::before {
+.circular-progress::before { /*進度條裡面的圓形形狀*/
     content: "";
     position: absolute;
-    height: 210px;
-    width: 210px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #FFF1E8;
     
 }
 
 .progress-value {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-    color: #7d2ae8;
+    color: #606060;
 }
 
 .text {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     color: #606060;
 }
