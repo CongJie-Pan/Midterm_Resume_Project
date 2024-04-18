@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/CircularPogressBar_style.css">
+    <link rel="stylesheet" href="css/AnimatedSkillsBar_style.css">
     <!-- Source han serif font-->
     <script>
         (function(d) {
@@ -45,14 +46,25 @@
 
                 <div class="BasicInfo_Content">
                     <h3>潘驄杰</h3>
-                    <p> # 用生活書寫生命的答案 </p>
-                    <p> # 分享中華文化的帳號 | @sheng_zhidao </p>
+                    <p> # 道阻且長，行則將至。 </p>
+                    <p> # 分享中華文化的帳號 | 
+                        <a href="https://www.instagram.com/sheng_zhidao/" style="text-decoration: none; color: #526881;font-weight: 600;" target="_blank">
+                            @sheng_zhidao</a> </p> <!-- Target blank 點擊後自動開啟新分頁 -->
                     <p> # 私立中原大學資訊管理學系二年級 </p>
+
+                    <div class="social_media_bar">
+
+                        <a href="https://github.com/Pan8732965" class="social_media_icon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/jaypan1206/" class="social_media_icon" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100010854546067" class="social_media_icon" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="mailto:smartjay1206@gmail.com" class="social_media_icon" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://vocus.cc/user/@JayPan" class="social_media_icon" target="_blank"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+    
+                    </div>
+
                 </div>
 
             </div>
-
-            
 
         </section>
 
@@ -64,7 +76,7 @@
 
                 <div class="Programming_Ability">
 
-                    <h3 class="Programming_Title">程式能力</h3>
+                    <h3 class="Programming_Title">【 程式能力 】</h3>
                     
                         <div class="CircularPogressBar_All_Container">
                             <!-- 第一個工作列動畫 -->
@@ -107,25 +119,39 @@
 
                 <div class="VideoEditting">
 
-                    <h3 class="VideoEdditing_Title">影片剪輯</h3>
-                    <ul>
-                        <li>
+                    <h3 class="VideoEdditing_Title">【 影片剪輯 】</h3>
+
+                    <div class="skill-bars">
+                        <div class="bar">
+                          <div class="info">
                             <span class="icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
-                            <span class="text">Adobe Premiere</span>
-                        </li>
-                        <li>
+                              
+                            <span>Adobe Premiere</span>
+                          </div>
+                          <div class="progress-line Adobe_Premiere">
+                            <span></span>
+                          </div>
+                        </div>
+                    
+                        <div class="bar">
+                          <div class="info">
                             <span class="icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
-                            <span class="text">Davanci Resolve</span>
-                        </li>
-                    </ul>
+                            <span>Davinci Resolve</span>
+                          </div>
+                          <div class="progress-line Davinci_Resolve">
+                            <span></span>
+                          </div>
+                        </div>
+                        
+                    </div>
 
                 </div>
 
-                <div class="separator_BasicInformation"></div> <!-- 分隔線 -->
+                <div class="separator_MyAbility"></div> <!-- 分隔線 -->
 
                 <div class="EnglishAbility">
 
-                    <h3 class="EnglishAbility_Title">英文能力</h3>
+                    <h3 class="EnglishAbility_Title">【 英文能力 】</h3>
                     <ul>
                         <li>
                             多益閱讀聽力：735分
@@ -167,23 +193,32 @@
 
                     <h3 class="WritingClass_Title">【 112-1學期 學習家「觀點寫作課」培訓課 】</h3>
                     
-                    <p> 
-                        於此培訓課程協助了我上手了寫作方法,並在每週的週更中更加
-                        熟化寫作能力,並以此成功投稿「天下獨立評論」之文章一篇:
-                        「國文教學怎麼了? 一位「資管學生」對國文
-                        教學的體悟」(如下圖)
-                    </p>
+                    
+                    <p>於此培訓課程協助了我上手了寫作方法，並在每週的週更中更加熟化寫作能力。</p>
+                    <p>並以此成功投稿「天下獨立評論」之文章一篇：</p>
+                    <p>「國文教學怎麼了？一位「『資管學生』對國文教學的體悟」(如下圖)</p>
+                    
 
                     <div class="WritingClass_ImgContainer">
 
                         <div class="WritingClass_Certificate">
                             <img src="WritingClass/WritingClass_Certificate_IMG.jpg">
                         </div>
-        
+                        
+                        <a href="https://opinion.cw.com.tw/blog/profile/52/article/14369" target="_blank" >
+                            <div class="WritingClass_ArticleCover">
+                                <img src="WritingClass/ArticleCover.jpg">
+                            </div>
+                            <p style="text-align: center; font-size: 18px;text-decoration: none;">
+                            ( 點我可查看文章 )
+                            </p>
+                        </a>
+
+                        <!--
                         <div class="WritingClass_ArticleCover">
                             <img src="WritingClass/ArticleCover.jpg">
                         </div>
-
+                        -->
                     </div>
 
                 </div>
@@ -195,9 +230,10 @@
                     <h3 class="SanCodeCompetion_Title">【 112-1學期 2023 第二屆善科科技文藝獎參賽證書】</h3>
                     
                     <p> 
-                        透過閱讀吳軍之《資訊大歷史:人類如何消除對未知的不確定》一書，
-                        撰寫約 2000 字的閱讀心得文章，並投稿此科技文章之比賽。
+                        透過閱讀吳軍之《資訊大歷史:人類如何消除對未知的不確定》一書。
                     </p>
+
+                    <p>撰寫約 2000 字的閱讀心得文章，並投稿此科技文章之比賽。</p>
 
                     <div class="SanCodeCompetion_Certificate">
                         <img src="SanCodeCompetition/2023SanCodeCompetition_Certificate_IMG.jpg">

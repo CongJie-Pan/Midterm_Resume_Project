@@ -1,26 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
-  background: #6665ee;
-}
+
 ::selection{
   color: #fff;
   background: #6665ee;
 }
 .skill-bars{
   padding: 25px 30px;
-  width: 600px;
+  width: 920px;
   background: #fff;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
   border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
 }
 .skill-bars .bar{
   margin: 20px 0;
@@ -37,6 +28,7 @@ html,body{
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
+
 @keyframes showText {
   100%{
     opacity: 1;
@@ -65,7 +57,7 @@ html,body{
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  background: #6665ee;
+  background: #7e91a5;
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.Adobe_Premiere span{

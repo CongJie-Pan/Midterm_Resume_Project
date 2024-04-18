@@ -27,6 +27,7 @@
     align-items: center;
     margin: 0 5px; /* 調整間距 */
     background-color: #d8e4d3;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
 
 .circular-progress { /*進度條本身*/
