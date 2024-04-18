@@ -30,7 +30,7 @@ nav{ /* 最上方欄位 */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* 添加微弱的黑色陰影 */
     
     
-    /* --- 以下將最上方欄位，視為動態導覽(點擊後可以導覽到該處，所用 --- */
+    /* --- 以下將最上方欄位，視為動態導覽(點擊後可以導覽到該處) 所用 --- */
 
     /*position: fixed; /* 將工具列固定在視口頂部 */
     /*transition: top 0.3s; /* 添加過渡效果 */
@@ -50,7 +50,7 @@ nav a{ /*  上方欄位內各欄位樣式設定 */
     font-weight: 900;
     font-style: normal;
     font-size: 18px;
-    
+    transition: background-color 0.5s, color 0.5s; /* 使用過渡效果 */
     
 }
 
@@ -193,16 +193,96 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 
 }
 
-.social_media_icon{
+.social_media_icon_github{
     color:#e2e2e2 ;
     font-size: 22px;
     text-decoration: none; /* 取消文字下劃線 */
     box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
     padding-left: 2px;
+    transition: background-color 0.5s, color 0.5s; /* 使用過渡效果 */
 }
 
+.social_media_icon_github:hover{
+    color: rgb(33, 33, 33); ;
+    font-size: 22px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    background-color: #dadada;
+}
 
+.social_media_icon_instragram{
+    color:#e2e2e2 ;
+    font-size: 22px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    transition: background-color 0.5s, color 0.5s; /* 使用過渡效果 */
+}
 
+.social_media_icon_instragram:hover{
+    color: rgb(33, 33, 33); ;
+    font-size: 22px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    background-color: #ff3685;
+}
+
+.social_media_icon_facebook{
+    color:#e2e2e2 ;
+    font-size: 22px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    transition: background-color 0.5s, color 0.5s; /* 使用過渡效果 */
+}
+
+.social_media_icon_facebook:hover{
+    color: rgb(33, 33, 33); ;
+    font-size: 22px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    background-color: #4796e1;
+}
+
+.social_media_icon_gmail{
+    color:#e2e2e2 ;
+    font-size: 20px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    transition: background-color 0.5s, color 0.5s; /* 使用過渡效果 */
+}
+
+.social_media_icon_gmail:hover{
+    color: rgb(33, 33, 33); ;
+    font-size: 20px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    background-color: #c63624;
+}
+
+.social_media_icon_vocus{
+    color:#e2e2e2 ;
+    font-size: 20px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    transition: background-color 0.5s, color 0.5s; /* 使用過渡效果 */
+}
+
+.social_media_icon_vocus:hover{
+    color: rgb(33, 33, 33); ;
+    font-size: 20px;
+    text-decoration: none; /* 取消文字下劃線 */
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    padding-left: 2px;
+    background-color: #fc79ad;
+
+}
 
 /*-----------------------*/
 /* --- My Ability 各項能力區 --- */
@@ -605,14 +685,11 @@ nav a:hover{ /* 偵測滑鼠有無滑到此處 */
 }
 
 footer{
-    background-color: #588157;
-    color:#DAD7CD;
+    background-color: #89b588;
+    color:#393838;
     text-align: center;
     padding: 6px;
     font-family: "source-han-serif-tc", serif;
     font-weight: 900;
     font-style: normal;
 }
-
-
-

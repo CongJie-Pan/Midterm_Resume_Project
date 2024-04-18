@@ -1,18 +1,11 @@
-/**
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/*
-* {
-    font-family: 'Poppins', sans-serif;
-}*/
 
 .CircularPogressBar_All_Container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 300px;
-    /*background-color: #7d2ae8;*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -21,7 +14,6 @@
     width: 300px;
     padding: 10px 0;
     border-radius: 8px;
-    
     row-gap: 15px;
     flex-direction: column;
     align-items: center;
